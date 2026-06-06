@@ -3,132 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="وب‌سایت کافه با منوی نوشیدنی، دسر و اطلاعات تماس">
-    <title>تپ کافه | قهوه، دسر و لحظه‌های گرم</title>
+    <meta name="description" content="وب‌سایت کافه با منوی نوشیدنی، دسر، درباره ما و اطلاعات تماس">
+    <title>تپ کافه | قهوه و دسر</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/cafe.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="home">
         <nav class="navbar" aria-label="ناوبری اصلی">
-            <a class="brand" href="#top" aria-label="صفحه اصلی تپ کافه">
-                <img src="img/logo.jpg" alt="لوگوی تپ کافه" class="logo">
+            <a class="brand" href="#home">
+                <img src="img/logo.jpg" alt="لوگوی تپ کافه">
                 <span>تپ کافه</span>
             </a>
 
-            <div class="nav-links">
+            <div class="nav-menu">
+                <a href="#home">خانه</a>
                 <a href="#menu">منو</a>
                 <a href="#about">درباره ما</a>
                 <a href="#contact">تماس</a>
             </div>
         </nav>
-    </header>
 
-    <main id="top">
         <section class="hero">
-            <img src="img/cafe-background.png" alt="فضای گرم و صمیمی کافه" class="hero-image">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <p class="eyebrow">قهوه تازه، دسر خوش‌طعم، حال خوب</p>
-                <h1>یک فنجان آرامش در تپ کافه</h1>
-                <p class="hero-text">با بهترین دانه‌های قهوه، دسرهای تازه و فضایی گرم منتظر شما هستیم.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#menu">دیدن منو</a>
-                    <a class="btn btn-ghost" href="#contact">رزرو و تماس</a>
+                <p class="subtitle">قهوه تازه، دسر خانگی، فضای آرام</p>
+                <h1>طعم گرم یک روز خوب</h1>
+                <p class="hero-text">در تپ کافه نوشیدنی‌های محبوب، دسرهای تازه و محیطی مرتب برای دورهمی، مطالعه و کار آماده است.</p>
+                <div class="hero-buttons">
+                    <a class="btn primary" href="#menu">مشاهده منو</a>
+                    <a class="btn secondary" href="#contact">رزرو میز</a>
                 </div>
             </div>
         </section>
+    </header>
 
-        <section class="features" aria-label="ویژگی‌های کافه">
-            <div class="feature-card">
+    <main>
+        <section class="quick-info" aria-label="ویژگی‌های کافه">
+            <article>
                 <span>☕</span>
                 <h2>قهوه تازه</h2>
                 <p>تهیه‌شده با دانه‌های باکیفیت و عطر دلنشین.</p>
-            </div>
-            <div class="feature-card">
+            </article>
+            <article>
                 <span>🍰</span>
                 <h2>دسر روز</h2>
-                <p>کیک‌ها و شیرینی‌های تازه برای کنار نوشیدنی.</p>
-            </div>
-            <div class="feature-card">
+                <p>کیک و شیرینی تازه برای کنار نوشیدنی.</p>
+            </article>
+            <article>
                 <span>🌿</span>
-                <h2>فضای آرام</h2>
+                <h2>محیط آرام</h2>
                 <p>مناسب قرار دوستانه، مطالعه و کار با لپ‌تاپ.</p>
-            </div>
+            </article>
         </section>
 
         <section class="section" id="menu">
-            <div class="section-heading">
-                <p>پیشنهادهای محبوب</p>
-                <h2>منوی ویژه امروز</h2>
+            <div class="section-title">
+                <p>پیشنهادهای امروز</p>
+                <h2>منوی محبوب کافه</h2>
             </div>
 
             <div class="menu-grid">
                 <article class="menu-card">
-                    <div class="card-img" style="background-image: url('img/coffee1.jpg');"></div>
-                    <div class="card-content">
-                        <div class="card-title-row">
+                    <img src="img/coffee1.jpg" alt="اسپرسو">
+                    <div class="menu-content">
+                        <div class="menu-title-row">
                             <h3>اسپرسو</h3>
-                            <span class="price">۹۰,۰۰۰ تومان</span>
+                            <strong>۹۰,۰۰۰</strong>
                         </div>
-                        <p>شات قوی و خوش‌عطر برای شروع یک روز پرانرژی.</p>
-                        <a class="card-btn" href="#contact">سفارش</a>
-                    </div>
-                </article>
-
-                <article class="menu-card featured">
-                    <div class="badge">محبوب</div>
-                    <div class="card-img" style="background-image: url('img/coffee2.jpg');"></div>
-                    <div class="card-content">
-                        <div class="card-title-row">
-                            <h3>کاپوچینو</h3>
-                            <span class="price">۱۵۰,۰۰۰ تومان</span>
-                        </div>
-                        <p>ترکیب اسپرسو، شیر گرم و فوم نرم با طعمی متعادل.</p>
-                        <a class="card-btn" href="#contact">سفارش</a>
+                        <p>قهوه‌ای قوی، کوتاه و خوش‌عطر برای شروع پرانرژی.</p>
+                        <a href="#contact">سفارش</a>
                     </div>
                 </article>
 
                 <article class="menu-card">
-                    <div class="card-img" style="background-image: url('img/coffee3.jpg');"></div>
-                    <div class="card-content">
-                        <div class="card-title-row">
+                    <img src="img/coffee2.jpg" alt="کاپوچینو">
+                    <div class="menu-content">
+                        <div class="menu-title-row">
+                            <h3>کاپوچینو</h3>
+                            <strong>۱۵۰,۰۰۰</strong>
+                        </div>
+                        <p>ترکیب اسپرسو، شیر گرم و فوم نرم با طعمی متعادل.</p>
+                        <a href="#contact">سفارش</a>
+                    </div>
+                </article>
+
+                <article class="menu-card">
+                    <img src="img/coffee3.jpg" alt="کیک شکلاتی">
+                    <div class="menu-content">
+                        <div class="menu-title-row">
                             <h3>کیک شکلاتی</h3>
-                            <span class="price">۲۴۰,۰۰۰ تومان</span>
+                            <strong>۲۴۰,۰۰۰</strong>
                         </div>
                         <p>کیک نرم و شکلاتی، مناسب کنار قهوه یا نوشیدنی گرم.</p>
-                        <a class="card-btn" href="#contact">سفارش</a>
+                        <a href="#contact">سفارش</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="about-content">
-                <p class="eyebrow dark">درباره تپ کافه</p>
-                <h2>جایی برای طعم خوب و لحظه‌های دوست‌داشتنی</h2>
-                <p>ما تلاش می‌کنیم با سرو نوشیدنی‌های باکیفیت، دسرهای تازه و برخورد صمیمی، تجربه‌ای دلنشین برای مهمانانمان بسازیم.</p>
-                <div class="stats">
-                    <div><strong>+۱۲</strong><span>نوشیدنی متنوع</span></div>
-                    <div><strong>هر روز</strong><span>دسر تازه</span></div>
-                    <div><strong>۱۰–۲۳</strong><span>ساعت کاری</span></div>
-                </div>
+        <section class="section about" id="about">
+            <div class="about-text">
+                <p class="section-kicker">درباره ما</p>
+                <h2>یک کافه ساده، گرم و مرتب</h2>
+                <p>تپ کافه با تمرکز روی کیفیت نوشیدنی، دسر تازه و فضای صمیمی ساخته شده است. طراحی سایت هم طوری مرتب شده که کاربر خیلی سریع منو، درباره کافه و راه تماس را پیدا کند.</p>
+            </div>
+            <div class="about-list">
+                <div><strong>۱۰ تا ۲۳</strong><span>ساعت کاری</span></div>
+                <div><strong>۱۲+</strong><span>نوشیدنی و دسر</span></div>
+                <div><strong>هر روز</strong><span>مواد تازه</span></div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <div class="contact-box">
+        <section class="section contact" id="contact">
+            <div class="contact-card">
                 <div>
-                    <p class="eyebrow dark">تماس با ما</p>
-                    <h2>برای سفارش یا رزرو میز پیام بدهید</h2>
-                    <p>آدرس، شماره تماس و شبکه‌های اجتماعی خودت را اینجا می‌توانی جایگزین کنی.</p>
+                    <p class="section-kicker">تماس</p>
+                    <h2>برای سفارش یا رزرو میز</h2>
+                    <p>اطلاعات زیر را بعداً می‌توانی با شماره و آدرس واقعی کافه خودت جایگزین کنی.</p>
                 </div>
                 <div class="contact-info">
-                    <p><strong>تلفن:</strong> ۰۹۱۲۱۲۳۴۵۶۷</p>
-                    <p><strong>آدرس:</strong> شهر شما، خیابان نمونه، پلاک ۱۰</p>
-                    <p><strong>اینستاگرام:</strong> @tapcafe</p>
+                    <p><b>تلفن:</b> ۰۹۱۲۱۲۳۴۵۶۷</p>
+                    <p><b>آدرس:</b> شهر شما، خیابان نمونه، پلاک ۱۰</p>
+                    <p><b>اینستاگرام:</b> @tapcafe</p>
                 </div>
             </div>
         </section>
